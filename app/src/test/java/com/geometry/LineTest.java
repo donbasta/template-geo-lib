@@ -27,4 +27,11 @@ public class LineTest {
         double length = line.getLength();
         assertEquals(2, length, EPS);
     }
+
+    @Test
+    void diagonalLineShouldReturnCorrectLength() {
+        Line line = new Line(0, 0, 3, 4);
+        double length = line.getLength();
+        assertEquals(5, length, EPS);
+    }
 }
