@@ -20,4 +20,11 @@ public class LineTest {
         double length = line.getLength();
         assertEquals(1, length, EPS);
     }
+
+    @Test
+    void verticalLineShouldReturnCorrectLength() {
+        Line line = new Line(2, 1, 2, 3);
+        double length = line.getLength();
+        assertEquals(2, length, EPS);
+    }
 }
